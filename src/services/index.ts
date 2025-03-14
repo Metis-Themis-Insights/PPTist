@@ -2,7 +2,9 @@ import axios from './config'
 
 // export const SERVER_URL = 'http://localhost:5000'
 export const SERVER_URL = (import.meta.env.MODE === 'development') ? '/api' : 'https://server.pptist.cn'
-export const ASSET_URL = ''
+export const ASSET_URL = (import.meta.env.MODE === 'development') 
+  ? '/api/asset'  // If using development proxy
+  : 'http://asset.pptist.laplacelab.ai'  // Our new proxy
 
 export default {
   getMockData(filename: string): Promise<any> {
