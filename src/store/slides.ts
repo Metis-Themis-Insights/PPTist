@@ -53,10 +53,10 @@ export const useSlidesStore = defineStore('slides', {
     viewportSize: 1000, // 可视区域宽度基数
     viewportRatio: 0.5625, // 可视区域比例，默认16:9
     templates: [
-      { name: '红色通用', id: 'template_1', cover: '/public/img/template_1.jpg' },
-      { name: '蓝色通用', id: 'template_2', cover: '/public/img/template_2.jpg' },
-      { name: '紫色通用', id: 'template_3', cover: '/public/img/template_3.jpg' },
-      { name: '莫兰迪配色', id: 'template_4', cover: '/public/img/template_4.jpg' },
+      { name: '红色通用', id: 'template_1', cover: 'img/template_1.jpg' },
+      { name: '蓝色通用', id: 'template_2', cover: 'img/template_2.jpg' },
+      { name: '紫色通用', id: 'template_3', cover: 'img/template_3.jpg' },
+      { name: '莫兰迪配色', id: 'template_4', cover: 'img/template_4.jpg' },
     ], // 模板
   }),
 
