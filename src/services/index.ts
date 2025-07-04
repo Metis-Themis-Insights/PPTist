@@ -1,7 +1,7 @@
 import axios from './config'
 
 // export const SERVER_URL = 'http://localhost:5000'
-export const SERVER_URL = (import.meta.env.MODE === 'development') ? '/api' : 'https://server.pptist.cn'
+export const SERVER_URL = (import.meta.env.MODE === 'development') ? '/api' : 'https://test-pptist-backend.laplacelab.cn'
 export const ASSET_URL = (import.meta.env.MODE === 'development') 
   ? '/api/asset'  // If using development proxy
   : 'http://asset.pptist.laplacelab.ai'  // Our new proxy
